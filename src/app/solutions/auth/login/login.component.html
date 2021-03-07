@@ -1,0 +1,48 @@
+<!-- <ion-content>
+    <h2>Login Component</h2>
+
+    <ion-button [routerLink]="['/app/dashboard']">Go to Dashboard</ion-button>
+</ion-content> -->
+
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Log In</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form id="loginForm">
+        <ion-item lines="full">
+            <ion-label position="floating">Email</ion-label>
+            <ion-input type="text" required></ion-input>
+        </ion-item>
+
+        <ion-item lines="full">
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="password" required></ion-input>
+        </ion-item>
+
+        <ion-row>
+            <ion-col>
+                <ion-button type="submit" expand="block">Log In</ion-button>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col class="centered">
+                <a [routerLink]="['/forgot-password']" class="small-text">Forgot Password?</a>
+            </ion-col>
+        </ion-row>
+    </form>
+
+    <ion-row>
+        <ion-col class="centered">
+            <p class="small-text noAccount">Don't have an accout?</p>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+            <ion-button [routerLink]="['/app/dashboard']" expand="block">Sign In</ion-button>
+        </ion-col>
+    </ion-row>
+
+</ion-content>
